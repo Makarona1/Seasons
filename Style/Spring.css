@@ -1,0 +1,268 @@
+@font-face {
+    font-family: Alex-Brush;
+    src: url(../Fonts/AlexBrush-Regular.ttf)
+}
+@font-face {
+    font-family: Comfortaa;
+    src: url(../Fonts/Comfortaa-Bold.ttf)
+}
+header{
+    background: linear-gradient(rgba(128, 128, 128, 0.463), rgba(128, 128, 128, 0.593)),url(../IMG/pexelsphoto3979186.jpeg);/* Фоновая картинка */
+    height: 100vh;
+    background-size: cover;
+    padding: 1px;
+    display: flex;
+    user-select: none;
+}
+body{
+    margin: 0; /*внешние отступы*/
+    position: relative;
+}
+h1{
+    color: white;
+    font-size: 6vw;
+    font-family: Alex-Brush;
+    font-weight: 200;
+    margin: auto;
+}
+#Poem{
+    font-family: Comfortaa;
+    display: flex;
+    font-size: 2.25vw;
+    align-items: center;
+    background-color: #4183ff;
+    height: 1200px;
+    user-select: none;
+}
+#Poem img{ /* Картинка стиха */
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;/* Чтобы картинка не искажалась */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+#Poem video{ /* Видео стиха */
+    width: 100%;
+    height: 1200px;
+    object-fit: cover;/* Чтобы видео не искажалась */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+#Poem p{
+    margin-left: 10%;
+    color: white;
+    font-family: Comfortaa;
+}
+#effect1{
+    width: 50%;
+    height: 1200px;
+    position: relative;
+    /* border: red 10px solid; */
+    cursor: pointer;
+}
+#effect1:hover img{
+    z-index: 0;
+}
+#Priznaki{
+    background: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.6)), url(../IMG/mnogie-belye-cvety.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    position: relative;
+}
+#Priznaki div{
+    margin: auto;
+    user-select: none;
+}
+#Priznaki div{
+    color: yellow;
+    font-family: Comfortaa;
+    font-size: 3em;
+    width: 25%;
+    /* border: red solid 10px; */
+}
+#Priznaki p{
+    font-size: 30px;
+}
+#Priznaki summary{
+    cursor: pointer;
+}
+#Butterfly{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: Fly 10s infinite;
+    /* border: red 5px solid; */
+}
+@keyframes Fly{
+    from{top: 33%; left: 65%;}
+    45%{top: 50%; left: 60%;}
+    90%{top: 45%; left: 50%;}
+    to{top: 33%; left: 65%;}
+}
+#Kalendar{
+    background-color: orange;
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    user-select: none;
+}
+#Month{
+    width: 350px;
+    height: 280px;
+    border: red 5px solid;
+    position: relative;
+}
+#March{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#April{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#May{
+    position: absolute;
+    top: 0;
+    left: 0;    
+}
+table{
+    border: #4183ff 10px groove;
+    padding: 10px;
+    border-spacing: 10px;
+}
+td{
+    border: #4183ff 5px dotted;
+    padding: 10px;
+    font-family: Comfortaa;
+    font-size: 30px;
+}
+caption{
+    font-family: Comfortaa;
+    font-size: 30px;
+}
+#March1{
+    cursor: pointer;
+}
+#April1{
+    cursor: pointer;
+}
+#May1{
+    cursor: pointer;
+}
+#March1:hover #March{
+    z-index: 10;
+}
+a{
+    color: gold;
+    text-decoration: none;
+    transition: all 0.5s;
+    display: block;
+    width: fit-content;
+    font-size: 100px;
+    user-select: none;
+}
+#Celebration{
+    padding: 60px;
+    background: url(../IMG/krasivye-belye-cvety-na-golubom-nebe.jpg);
+    height: 1100px;
+    background-size: cover;
+    background-position: 0 1800px;
+}
+#Celebration div{
+    margin-top: 400px;
+    margin-left: auto;
+    /* margin-right: 50px; */
+    text-align: left;
+    width: fit-content;
+}
+a:hover{
+    color: orange;
+    transform: scale(1.1);
+    animation: colors 3s infinite;
+}
+@keyframes colors{
+    from{color: #ffd700;}
+    35%{color:#adff2f}
+    55%{color: #0000ff}
+    75%{color: #ff0000}
+    to{color: #ffd700;}
+}
+#Gallery{
+    display: flex;
+    justify-content: center;
+    gap: 60px;    /* Расстояние между флекс элементами */
+    padding: 25px;
+    background: linear-gradient(rgba(128, 128, 128, 0.5), rgba(128, 128, 128, 0.5));
+}
+#Gallery figure{
+    width: 22%;
+    height: 1000px;
+    margin: auto;
+    border: 15px ridge yellow;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+}
+#Gallery img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s;
+    z-index: 0;
+    position: relative;
+}
+figcaption{
+    margin-top: -60px;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 25px;
+    color: rgb(153, 255, 0);
+    z-index: 102;
+    position: relative;
+    user-select: none;
+}
+#Gallery figure:hover img{
+    transform: scale(1.3);
+}
+#video{
+    text-align: center;
+    background-color: yellow;
+    padding: 40px;
+    animation: superanimation 5s infinite linear;
+}
+#cveti{
+    border: red dashed 15px;
+    border-radius: 30px;
+    width: 80%;
+}
+@keyframes superanimation{
+    from{background-color: rgba(255, 255, 0, 0.5);}
+    45%{background-color: rgba(255, 0, 255, 0.5);}
+    75%{background-color: rgba(172, 255, 47, 0.5);}
+    to{background-color: rgba(255, 255, 0, 0.5);}
+}
+#SpringButterfly{
+    padding: 50px;
+    background-color: rgb(225, 255, 0);
+    text-align: center;
+}
+#SpringButterfly img{
+    width: 50%;
+}
+footer{
+    background-color: rgb(225, 255, 0);
+    padding: 30px;
+    text-align: center;
+    font-family: Comfortaa;
+    font-size: 50px;
+}

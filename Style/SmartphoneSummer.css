@@ -1,0 +1,132 @@
+@media(max-width: 1000px){
+    #Firstplan{
+        width: 80%;
+        height: 450px;
+        box-shadow: #b1e4ef 45px -45px 1px 3px;
+        margin-left: 3%;
+        margin-top: 39%;
+    }
+    header div{
+        width: 60%;
+        height: 40%;
+        position: absolute;
+        top: 580px;
+        left: 26%;
+        padding: 40px;
+        border: 0px;
+        font-size: 25px;
+        border-radius: 30px;
+        background-color: #f0efebbc;
+        font-family: Shanel;
+        user-select: none;
+    }
+    #Cloud{
+        width: 230px;
+        height: 230px;
+        animation: perenos 5s infinite linear;
+    }
+    @keyframes perenos{
+        from{top: 1%; left: -45%;}
+        to{top: 1%; left: 105%;}
+    }
+    #Sun{
+        display: none;
+    }
+    #Poem{
+        column-count: 1;
+        column-rule: 5px solid #15d796;
+        column-gap: 2;
+        column-width: 150px;
+        padding: 20px;
+        text-align: left;
+        background-color: rgb(224, 222, 222);
+    }
+    #Poem p{
+        padding: 0px 60px;
+        font-size: 40px;
+        font-family: Shanel;
+        user-select: none;
+        margin: auto;
+    }
+    #Priznaki div{
+        flex-direction: column;
+    }
+    h2{
+        font-size: 65px;
+    }
+    ul{
+        padding-right: 10%;
+    }
+    li:first-child{
+        background-image: url(../IMG/sun_2539179.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 200px;
+        background-position: left;
+        font-size: 70px;
+    }
+    li:nth-child(2){
+        background-image: url(../IMG/june_11728369.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 200px;
+        background-position: left;
+        font-size: 70px;
+    }
+    li:nth-child(3){
+        background-image: url(../IMG/windy_15593854.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 200px;
+        background-position: left;
+        font-size: 70px;
+    }
+    li:nth-child(4){
+        background-image: url(../IMG/rose_5999566.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 200px;
+        background-position: left;
+        font-size: 70px;
+    }
+    #PrizIMG{
+        width: 600px;
+        height: 400px;
+    }
+    #Gallery{
+        flex-direction: column;
+    }
+    #Gallery img{
+        width: 80%;
+        height: 80%;
+        border: orange groove 15px;
+        border-radius: 16px;
+        transition: all 2s;
+        filter: blur(5px);
+    }
+    #calendar{
+        padding: 30px;
+    }
+    #Game{
+        flex-direction: column;
+    }
+    #Lobby{
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 10px solid greenyellow;
+    }
+    #InsideGame{
+    width: 100%;
+    box-sizing: border-box;
+    border-left: 10px solid greenyellow;
+    }#Giperssilki{
+        flex-direction: column;
+        gap: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        width: 120%;
+        padding-top: 500px;
+    }
+}

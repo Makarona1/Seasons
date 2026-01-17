@@ -1,0 +1,28 @@
+@media(max-width: 1000px){
+    a:first-child{
+    top: 81%;
+    left: 13%;
+    rotate: 14deg;
+}
+a:nth-child(2){
+    top: 19%;
+    left: 8%;
+    rotate: 329deg;
+}
+a:nth-child(3){
+    top: 19%;
+    left: 70%;
+    rotate: 28deg;
+}
+a:nth-child(4){
+    top: 80%;
+    left: 68%;
+    rotate: 342deg;
+}
+#clock{
+    width: 150px;
+    height: 150px;
+    top: 20px;
+    left: calc(50% - 75px);
+}
+}

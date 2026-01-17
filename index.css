@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Oi;
+    src: url(./Fonts/Oi-Regular.ttf);
+}
+@font-face {
+    font-family: Rubik;
+    src: url(./Fonts/RubikPuddles-Regular.ttf);
+}
+@font-face {
+    font-family: Alex;
+    src: url(./Fonts/AlexBrush-Regular.ttf);
+}
+@font-face {
+    font-family: Comf;
+    src: url(./Fonts/Comfortaa-Bold.ttf);
+}
+@font-face {
+    font-family: Shanel;
+    src: url(./Fonts/ShantellSans-Italic-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
+}
+body{
+    background: url(IMG/Без\ имени.png);
+    background-size: contain;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+}
+main{
+    padding: 1px;
+    width: fit-content;
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+}
+nav{
+    /* display: flex;
+    flex-direction: column;
+    gap: 50px; */
+}
+h1{
+    font-family: Oi;
+    font-size: 6vw;
+    font-weight: 100;
+    margin: auto;
+    color: #764f8e;
+    text-shadow: 0px 0px 20px black;
+    animation: coloranim 5s infinite alternate;
+}
+@keyframes coloranim{
+    0%{color: #764f8e;}
+    25%{color: #00988b;}
+    50%{color: #789f42;}
+    75%{color: #ff7d1b;}
+    100%{color: #764f8e;}
+}
+#clock{
+    position: absolute;
+}
+a:first-child{
+    position: absolute;
+    top: 93%;
+    left: 23%;
+    font-size: 50px;
+    text-decoration: none;
+    color: #764f8e;
+    font-family: Rubik;
+    font-weight:900;
+}
+a:nth-child(2){
+    position: absolute;
+    top: 7%;
+    left: 23%;
+    font-size: 50px;
+    text-decoration: none;
+    color: #00988b;
+    font-family: Alex;
+    font-weight: 900;
+}
+a:nth-child(3){
+    position: absolute;
+    top: 7%;
+    left: 70%;
+    font-size: 50px;
+    text-decoration: none;
+    color: #789f42;
+    font-family: Comf;
+    font-weight: 900;
+}
+a:nth-child(4){
+    position: absolute;
+    top: 93%;
+    left: 70%;
+    font-size: 50px;
+    text-decoration: none;
+    color: #ff7d1b;
+    font-family: Shanel;
+}
+#clock{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border: black 10px solid;
+    border-radius: 50%;
+    background-color: gray;
+    left: 5%;
+    top: 5%;
+}
+#minutes{
+    position: absolute;
+    width: 40%;
+    height: 6px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    animation: go 3600s linear infinite;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+#seconds{
+    position: absolute;
+    width: 30%;
+    height: 6px;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    animation: go 60s linear infinite;
+    transform-origin: left;
+    transform: rotate(-90deg);
+}
+@keyframes go{
+    from{transform: rotate(-90deg);}
+    to{transform: rotate(270deg);}
+}
+/* #istagram{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    background: linear-gradient(-135deg, purple 33%, red, yellow);
+    left: 900px;
+    padding: 1px;
+}
+#whitesquare{
+    position: relative;
+    width: 80%;
+    height: 80%;
+    border: 10px solid white;
+    border-radius: 50px;
+    margin: calc(10% - 1px);
+    box-sizing: border-box;
+}
+#whitecircle{
+    position: absolute;
+    width: 70%;
+    height: 70%;
+    border: 15px white solid;
+    border-radius: 50%;
+    margin: calc(15% - 1px);
+    box-sizing: border-box;
+}
+#whitecircle2{
+    position: absolute;
+    width: 0.1%;
+    height: 0.1%;
+    border: 10px white solid;
+    border-radius: 50%;
+    left: 180px;
+    top: 20px;
+} */

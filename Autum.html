@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autum</title>
+<style>
+    table{
+        border: 10px solid red;
+        border-spacing: 15px;
+        margin-left: 30%
+    }
+    td{
+        padding: 20px;
+        border: 5px solid orange;
+        border-radius: 50%;
+    }
+    td:hover{
+        background-color: yellow;
+        color: red
+    }
+    H1{
+        border: 10px solid red;
+        border-spacing: 15px;
+    }
+    #holidays{
+        border: 15px groove orange;
+        border-collapse: collapse;
+        margin-left: 70%;
+    }
+    #holidays td:hover{
+        border-radius: 0%;
+        background-color:darkgoldenrod;
+        color: black;
+    }
+    caption{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    #Galary_Autum{
+        display: flex;
+        justify-content: space-around;
+        margin-top: 50px;
+        border: 10px solid orange;
+        padding: 20px;
+    }
+    #Galary_Autum img{
+        width: 20%;
+        height: 750px;
+        object-fit: cover;
+        border: 10px solid red;
+        outline: 10px solid yellow;
+    }
+    #Galary_Autum img:hover{
+        transform: scale(1.1);
+    }
+    #Galary_Autum img{
+        transition: all 0.5s;
+    }
+    #film video{
+        width: 90%;
+        height: 1000px;
+        object-fit: cover;
+        object-position: 0px 200px;
+    }
+    #film{
+        text-align: center;
+        padding: 50px;
+    }
+    #audio {
+        text-align: center;
+        padding: 50px;
+    }
+    audio{
+        width: 500px;
+        object-fit: contain;
+        border: 10px solid orange;
+        border-radius: 5px 5px 5px 5px;
+    }
+    #opros{
+        text-align: center;
+        padding: 50px;;
+    }
+    iframe{
+        border: 15px solid gold;
+    }
+    #stranici{
+        font-size: 150px;
+        text-align: center;
+    }
+    a{
+        color: gold;
+        text-decoration: none;
+        transition: all 1s;
+        display: block;
+        width: fit-content;
+        margin: auto;
+    }
+    a:hover{
+        color: orange;
+        transform: scale(1.1);
+    }
+    #leaves1{
+        position: absolute;
+        top: 50px;
+        left: 30%;
+        animation: fall 5s infinite;
+        animation-delay: 1s;
+    }
+    #leaves2{
+        position: absolute;
+        top: 50px;
+        left: 60%;
+        animation: fall 5s infinite;
+        animation-delay: 2s;
+    }
+    #leaves3{
+        position: absolute;
+        top: 50px;
+        left: 90%;
+        animation: fall 5s infinite;
+        animation-delay: 3s;
+    }
+    @keyframes fall{
+        from{top: 50px; transform: rotate(0);}
+        to{top: 150vh; transform: rotate(720deg);}
+    }
+</style>
+</head>
+<body>
+    <H1 style="background-color: orange; color: brown; padding: 30px; text-align: center; width: fit-content; margin: auto;  box-shadow: 5px 5px 5px 5px; border-radius: 10px;">Осень 2025</H1>
+    <P style="background-color: aliceblue; margin-left: 30%; color: black; width: fit-content; border: 5px groove orange; padding: 20px; font-size: 20px;">Вот на ветке лист кленовый, <br>
+Нынче он совсем как новый! <br>
+Весь румяный, золотой. <br>
+Ты куда, листок? Постой! </P>
+<div style="background-color: orange; color: brown; font-size: 25px; width: fit-content; padding: 30px; box-shadow: 5px 5px 5px 5px grey; border-radius: 10px; margin-left: 50%;">  
+<H2>Признаки осени:</H2>
+    <ul>
+        <li>Холод</li>
+        <li>Листопад</li>
+        <li>Рано темнеет</li>
+        <li>Дожди</li>
+    </ul>
+</div>
+<table>
+    <caption>Календарь осени</caption>
+    <tr>
+        <td>Сентябрь</td>
+        <td>30</td>
+    </tr>
+    <tr>
+        <td>Октябрь</td>
+        <td>31</td>
+    </tr>
+    <tr>
+        <td>Ноябрь</td>
+        <td>30</td>
+    </tr>
+</table>
+<table id="holidays">
+    <caption>Праздники осени</caption>
+    <tr>
+        <td>Сентябрь</td>
+        <td>1 - День знаний</td>
+    </tr>
+    <tr>
+        <td>Октябрь</td>
+        <td>5 - День учителя</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Ноябрь</td>
+        <td>4 - День народного единства</td>
+    </tr>
+    <tr>
+        <td>30 - День матери</td>
+    </tr>
+</table>
+<section id="Galary_Autum">
+    <img src="IMG/kofe-i-odealo-vozle-knigi-i-tykvy.jpg" alt="">
+    <img src="IMG/krasivye-osennie-list-a-na-osennei-krasnoi-fone-solnecnyi-dnevnoi-gorizontal-nyi-tonirovanie.jpg" alt="">
+    <img src="IMG/osennie-list-a-duba.jpg" alt="">
+    <img src="IMG/ruka-holding-zeltye-list-a-klena-na-fone-oseni-solnecnyi-ruka-holding-zeltyi-klenovyi-list-razmyty-osen-u-derev-a-background-autumn-concept-selective-focus.jpg" alt="">
+</section>
+<section id="film">
+    <video src="Video/7048259-animation-motion-graphic-3840x2160_hvriJhV5.mp4" autoplay muted loop></video>
+</section>
+<section id="audio">
+    <audio src="Audio/freepik-stereo-summer.mp3" controls></audio>
+</section>
+<section id="opros">
+    <iframe width="750" height="405" src="https://rutube.ru/play/embed/e13cec32c11dc9dfeaa1a99dce38c709/" allow="clipboard-write; autoplay" webkitAllowFullScreen mozallowfullscreen allowFullScreen ></iframe>
+</section>
+<section id="stranici">
+    <a href="https://ru.wikipedia.org/wiki/Осень">Википедия</a>
+    <a href="https://www.pravmir.ru/stixi-pro-osen/">Стихи</a>
+    <a href="https://ru.freepik.com/free-photos-vectors/осень-красивые">Красивые картинки</a>
+</section>
+<img id="leaves1" src="IMG/maple-leaf_112187.png" alt="">
+<img id="leaves2" src="IMG/22338mapleleaf_98750.png" alt="">
+<img id="leaves3" src="IMG/leaves_112177 (1).png" alt="">
+</body>
+</html>

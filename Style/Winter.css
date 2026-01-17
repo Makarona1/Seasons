@@ -1,0 +1,247 @@
+@font-face {
+    font-family: Comfortaa;
+    src: url(../Fonts/Comfortaa-Bold.ttf);
+}
+header{
+    width: auto;
+    height: 100vh;
+    background:  linear-gradient(rgba(0, 0, 255, 0.498), hsla(0, 0%, 100%, 0.447)), url(../IMG/zahvatyvausii-vid-na-zasnezennyi-les-vo-vrema-zakata-v-norvegii.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+    display: flex;
+    position: relative;
+    background-attachment: fixed;
+}
+#sound{
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    cursor: pointer;
+    z-index: 101;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+H1{
+    margin: auto;
+    font-size: 7vw;
+    color: rgba(127, 243, 243, 0.989);
+    font-family: Comfortaa;
+    user-select: none;
+    transition: all 1s;
+}
+H1:hover{
+    transform: scale(1.19);
+}
+#Poem{
+    padding: 50px;
+    background-color: dodgerblue;
+    font-size: 3vw;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+    user-select: none;
+    color: white;
+    text-shadow: 6px 6px 3px aqua;
+    font-family: Comfortaa;
+}
+img{
+    -webkit-user-drag: none;
+    transition: all 2s;
+}
+#Poem img:hover{
+    transform: rotate(360deg);
+}
+#Priznaki{
+    padding: 50px;
+    background-position: 0px -200px;
+    background: linear-gradient(rgba(0, 128, 0, 0.491), rgba(255, 255, 255, 0.486)), url(../IMG/moroz-i-sneg-na-vetvah-krasivyi-zimnii-sezon-fotografia-zamorozennoi-prirody.jpg);
+    background-size: cover;
+    width: auto;
+    height: 70vh;
+    display: flex;
+    position: relative;
+    background-attachment: fixed;
+}
+#snow1{
+    position: absolute;
+    top: 15px;
+    left: 8%;
+    width: 100px;
+    opacity: 0;
+}
+#snow2{
+    position: absolute;
+    top: 15px;
+    left: 47%;
+    width: 100px;
+    opacity: 0;
+}
+#snow3{
+    position: absolute;
+    top: 15px;
+    left: 90%;
+    width: 100px;
+    opacity: 0;
+}
+.snow{
+    animation: snowfall 5s infinite;
+}
+@keyframes snowfall{
+    from{top: 15px; transform: rotate(0); opacity: 1;}
+    to{top: 100%; transform: rotate(360deg); opacity: 0.5;}
+}
+#sygrobimage{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 30%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: 10;
+}
+.sygrob{
+    opacity: 1 !important;
+}
+#Sygrob{
+    width: fit-content;
+}
+#Priznaki div{
+    margin: auto;
+    font-size: 5vh;
+    font-family: Comfortaa;
+    color: rgb(166, 255, 73);
+    user-select: none;
+}
+#Cold{
+    width: fit-content;
+}
+nav{
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0.158);
+    display: flex;
+    justify-content: center;
+    gap: 8%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    font-family: Comfortaa;
+}
+nav a:hover{
+    text-decoration: underline;
+}
+html{
+    scroll-behavior: smooth;
+}
+#up{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    cursor: pointer;
+    z-index: 101;
+}
+#toy1{
+    position: absolute;
+    top: 500px;
+    left: 17%;
+    width: 150px;
+    opacity: 0;
+    animation: leftright 2s infinite;
+    transform-origin: center center;
+    transform: rotate(-90deg)
+}
+#toy2{
+    position: absolute;
+    top: 350px;
+    left: 19%;
+    width: 150px;
+    opacity: 0;
+    animation: leftright 2s infinite;
+}
+#toy3{
+    position: absolute;
+    top: 650px;
+    left: 15%;
+    width: 150px;
+    opacity: 0;
+    animation: leftright 2s infinite;
+}
+#NewYear{
+    width: fit-content;
+    position: relative;
+    z-index: 100;
+}
+@keyframes leftright{
+    from{transform: skew(1deg);}
+    to{transform: skew(200deg);}
+}
+#Calendar{
+    border: 20px groove aqua;
+    padding: 100px;
+    background: linear-gradient(rgba(0, 200, 255, 0.556), rgba(194, 12, 194, 0.499));
+}
+table{
+    border: 15px solid blue;
+    padding: 10px;
+    margin: auto;
+    border-spacing: 10px;
+    font-family: Comfortaa;
+    font-size: 30px;
+    user-select: none;
+    box-shadow: 5px 5px 100px 10px aqua;
+}
+td{
+    border: 8px groove rgb(63, 213, 255);
+    padding: 10px;
+    font-size: 30px;
+    font-family: Comfortaa;
+    user-select: none;
+    transition: all 2s;
+}
+td:hover{
+    transform: rotate(180deg) scale(1.1);
+}
+#video{
+    border: 15px groove greenyellow;
+    padding: 50px;
+    text-align: center;
+    background: linear-gradient(rgb(0, 255, 0), rgba(0, 124, 0, 0.576));
+}
+video::-webkit-media-controls{  
+    display: none !important;
+}
+/* #prezi{
+    border: 15px groove aquamarine;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(blue, white);
+}
+#prezi iframe{
+    width: 1000px;
+    height: 600px;
+} */
+#book{
+    border: 20px groove blue;
+    padding: 30px;
+    background: linear-gradient(aqua, rgb(202, 10, 202));
+    text-align: center;
+}
+#prezentatiua{
+    border: 15px groove aquamarine;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(blue, white);
+}

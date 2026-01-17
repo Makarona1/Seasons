@@ -1,0 +1,373 @@
+@font-face {
+    font-family: Shanel;
+    src: url(../Fonts/ShantellSans-Italic-VariableFont_BNCE\,INFM\,SPAC\,wght.ttf);
+}
+#Firstplan{
+    width: 60%;
+    height: 900px;
+    border-radius: 50px;
+    box-shadow: #b1e4ef 150px -150px 1px 15px;
+    margin: 300px auto;
+    display: block;
+    object-fit: cover;
+    user-select: none;
+}
+header{
+    background-color: rgb(224, 222, 222);
+    padding: 1px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+body{
+    margin: 0;
+}
+header div{
+    width: 25%;
+    height: auto;
+    position: absolute;
+    top: 550px;
+    left: 55%;
+    padding: 40px;
+    border: 0px;
+    font-size: 27px;
+    border-radius: 30px;
+    background-color: #f0efebbc;
+    font-family: Shanel;
+    user-select: none;
+}
+h1{
+    margin: 0;
+    margin-bottom: 10px;
+    color: #91d6e5;
+    font-family: Shanel;
+    user-select: none;
+}
+#Sun{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30px;
+    left: 89%;
+    animation: rotate 10s infinite linear;
+    user-select: none;
+}
+@keyframes rotate{
+    0%{transform: rotate(360deg);}
+    25%{transform:rotate(0deg);}
+    50%{transform: rotate(360deg);}
+    75%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+#Cloud{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 30px;
+    left: 1%;
+    animation: perenos 8s infinite linear;
+    user-select: none;
+}
+@keyframes perenos{
+    from{top: 1%; left: 70%;}
+    50%{top: 1%; left: 1%;}
+    to{top: 1%; left: 70%;}
+}
+#Poem{
+    column-count: 4;
+    column-rule: 5px solid #15d796;
+    column-gap: 20px;
+    column-width: 150px;
+    padding: 20px;
+    text-align: left;
+    background-color: rgb(224, 222, 222);
+}
+#Poem p{
+    padding: 0px 150px;
+    font-size: 22px;
+    font-family: Shanel;
+    user-select: none;
+}
+#Priznaki{
+    padding: 50px;
+    background-color: rgb(224, 222, 222);
+}
+h2{
+    font-size: 70px;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: Shanel;
+    user-select: none;
+}
+ul{
+    list-style: none;
+}
+li{
+    /* border: red 2px solid; */
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+    user-select: none;
+}
+li:hover{
+    transform: translateX(100px);
+}
+li:first-child{
+    background-image: url(../IMG/sun_2539179.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    background-position: left;
+    font-size: 70px;
+}
+li:nth-child(2){
+    background-image: url(../IMG/june_11728369.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    background-position: left;
+    font-size: 70px;
+}
+li:nth-child(3){
+    background-image: url(../IMG/windy_15593854.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    background-position: left;
+    font-size: 70px;
+}
+li:nth-child(4){
+    background-image: url(../IMG/rose_5999566.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    background-position: left;
+    font-size: 70px;
+}
+#PrizIMG{
+    opacity: 1;
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    user-select: none;
+}
+#Priznaki div{
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+    align-items: center;
+}
+#calendar{
+    background-color: rgb(224, 222, 222);
+    text-align: center;
+}
+table{
+    border: 15px #ffa01a groove;
+    padding: 50px;
+    margin: auto;
+    border-spacing: 40px;
+    border-radius: 15px;
+    transition: 1s all;
+}
+td{
+    border: #ffa01a dotted 10px;
+    padding: 15px;
+    font-size: 50px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+    user-select: none;
+    transition: all 0.5s;
+}
+#caption{
+    font-size: 60px;
+    font-family: Shanel;
+    animation: rocking 2s infinite linear;
+    margin-top: 0;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 50px;
+}
+table:hover td{
+    border-color: #2de9ed;
+}
+table:hover{
+    border-color: #2de9ed;
+}
+@keyframes rocking{
+    from{transform: rotate(10deg);}
+    50%{transform: rotate(-10deg)}
+    to{transform: rotate(10deg);}
+}
+#caption:hover{
+    animation-play-state: paused;
+}
+#Gallery{
+    display: flex;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    background-color: rgb(224, 222, 222);
+    padding-top: 75px;
+}
+#Gallery img{
+    width: 20%;
+    height: 60%;
+    border: orange groove 15px;
+    border-radius: 16px;
+    transition: all 2s;
+    filter: blur(5px);
+}
+#Gallery img:hover{
+    border-radius: 50%;
+    filter: none;
+}
+/* #Gallery div:hover{
+    border-radius: 50%;
+    filter: none;
+} */
+/* #Gallery div{
+    border: orange groove 15px;
+    width: 20%;
+    height: 60%;
+    border-radius: 16px;
+    transition: all 2s;
+} */
+#Game{
+    background-color: rgb(224, 222, 222);
+    display: flex;
+    user-select: none;
+}
+#watermelon{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    -webkit-user-drag: none;
+    transition: all 2s;
+}
+#Lobby{
+    width: 50%;
+    height: 800px;
+    border: 10px solid greenyellow;
+    border-left: 5px;
+}
+#InsideGame{
+    width: 50%;
+    height: 800px;
+    /* margin-left: 80%; */
+    border: 10px solid greenyellow;
+    border-left: 5px;
+    position: relative;
+}
+#Game h3{
+    font-size: 50px;
+    font-family: Shanel;
+    text-align: center;
+}
+#Game button{
+    font-size: 50px;
+    font-family: Shanel;
+    box-shadow: 0px 0px 1px 10px greenyellow
+}
+#Lobby{
+    text-align: center;
+}
+#Game h4{
+    font-size: 50px;
+    font-family: Shanel;
+    text-align: center;
+}
+#Game h5{
+    font-size: 40px;
+    font-family: Shanel;
+    color: black;
+    margin-top: 5px;
+}
+.FlexCont{
+    display: flex;
+    justify-content: space-around;
+}
+#timer{
+    width: 100px;
+    height: 50px;
+    font-size: 30px;
+}
+#Giperssilki{
+    background-color: rgb(224, 222, 222);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 100px;
+}
+a{
+    width: 25%;
+    height: 600px;
+    padding: 50px;
+    border: coral solid 10px;
+    font-size: 50px;
+    font-family: Shanel;
+    border-radius: 16px;
+    padding-top: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all 1s;
+}
+#silka1{
+    background-image: linear-gradient(rgba(128, 128, 128, 0.35), rgba(128, 128, 128, 0.5)), url(../IMG/doska-dla-zakusok-s-masnym-assorti-svezimi-fruktami-i-syrom-na-trapke-dla-piknika.jpg);
+    background-position: center center;
+    background-size: cover;
+    color: yellow;
+}
+#silka2{
+    background-image: url(../IMG/freepik__the-style-is-candid-image-photography-with-natural__13285.png);
+    background-position: center center;
+    background-size: cover;
+    color: yellow;
+}
+#silka3{
+    background-image: url(../IMG/freepik__the-style-is-candid-image-photography-with-natural__67788.png);
+    background-position: center center;
+    background-size: cover;
+    color: yellow;
+}
+a:hover{
+    transform: scale(1.2);
+}
+#video{
+    background-color: rgb(224, 222, 222);
+    text-align: center;
+    padding: 50px;
+}
+#rolik{
+    border: 25px dashed #ed7576;
+    border-radius: 50px;
+    animation: bordercolor infinite 10s linear;
+    width: 80%;
+    box-sizing: border-box;
+}
+@keyframes bordercolor{
+    0%{border-color: red;
+        border-width: 25px;}
+    16%{border-color: orange;
+        border-width: 30px;}
+    32%{border-color: yellow;
+        border-width: 35px;}
+    48%{border-color: green;
+        border-width: 40px;}
+    64%{border-color: aqua;
+        border-width: 35px;}
+    80%{border-color: blue;
+        border-width: 30px;}
+    92%{border-color: purple;
+        border-width: 25px;}
+    100%{border-color: red;
+        border-width: 25px;}
+}
+#frame{
+    height: 70vh;
+    overflow: hidden;
+    background-color: rgb(224, 222, 222);
+}
